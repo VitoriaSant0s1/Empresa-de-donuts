@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Shakies";
+    src: url(./fonte/Shakies-OpenType-PS.otf);
+ }
+
+ @font-face {
+    font-family: "Cloudy June";
+    src: url(./fonte/Cloudy\ June.ttf);
+ }
+
+
+
+body {
+    font-family: Cloudy June;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #E688AB;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: Shakies;
+    margin: 0;
+}
+
+
+
+main {
+    padding: 20px;
+}
+
+.postagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+article {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #E688AB;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

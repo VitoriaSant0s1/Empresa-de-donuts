@@ -1,0 +1,432 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: "Cloudy June";
+    src: url(./fonte/Cloudy\ June.ttf);
+ }
+
+ @font-face {
+    font-family: "Shakies";
+    src: url(./fonte/Shakies-OpenType-PS.otf);
+ }
+
+
+body{
+    background-color: #D3D0F7;
+    overflow-x: hidden;
+}
+
+
+
+.img_cabecalho{
+    position: absolute;
+    width: 100%;
+    margin-bottom: -580px;
+}
+
+
+.logo{
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.icon{
+    position: relative;
+    height: 30px;
+    margin-left: 0px;
+    margin: 40px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    float: left;
+}
+
+.menu{
+    position: relative;
+    display: flex;
+    margin: 13px;
+    padding: 10px;
+    font-family: Cloudy June;
+    font-size: 24px;
+    float: left;
+}
+
+.menu ul li{
+    display: inline;
+    list-style: none;
+    padding: 10px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color:black
+}
+
+.slogan{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display:flex;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    font-family: Shakies;
+    
+}
+
+.slogan1{
+    position: absolute;
+    padding-left: 200px;
+    align-items: flex-start;
+    margin-top: 100px;
+    font-size: 70px
+
+}
+
+.rosquinha{
+    height: 460px;
+    position: relative;
+    
+}
+
+.retangulo {
+    line-height:0;
+    position:absolute;
+    left: 100px;
+    width:1200px;
+    height:499px;
+    border: 1px solid #FFF;
+}
+
+.rosquinhas-sobre{
+    display: flex;
+    position:absolute;
+    margin-bottom: 10px;
+    left: 1200px;
+    height: 490px;
+    width: 200px;
+
+}
+
+.rosquinhas-sobre1{
+    display: flex;
+    position:absolute;
+    margin-bottom: px;
+    left: -18px;
+    height: 499px;
+    width: 180px;
+
+}
+
+
+.sobre{
+    position: relative;
+    margin:100px auto;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+
+}
+
+.slider{
+    width:400%;
+    height: 400px;
+    display:flex;
+
+}
+
+.sobre input{
+    display:none;
+}
+
+
+.slide{
+    width: 25%;
+    position: relative;
+
+}
+
+.slide img{
+    margin-left: 300px;
+    margin-top:27px;
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 749px;
+    margin-top: 55px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.manual-btn{
+    border: 2px solid transparent;
+    background-color: #E688AB;
+    padding:5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .04s;
+
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #FFF;
+}
+
+#radio1:checked ~ .first{
+    margin-left:0;
+
+}
+#radio2:checked ~ .first{
+    margin-left:-25%;
+
+}
+#radio3:checked ~ .first{
+    margin-left:-50%;
+
+}
+
+.navigation_btn{
+    position: absolute;
+    width: 749px;
+    margin-top: 455px;
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+.navigation_btn div{
+    border:2px solid #1b1e20;
+    padding: 5px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: .04s;
+}
+
+
+
+.navigation_btn div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation_btn .auto-btn1{
+    background-color: #FFF;
+}
+
+#radio2:checked ~ .navigation_btn .auto-btn2{
+    background-color: #FFF;
+}
+
+#radio3:checked ~ .navigation_btn .auto-btn3{
+    background-color: #FFF;
+}
+
+.Donuts{
+    padding-top: 220px;
+    padding-bottom: 100px;
+}
+
+.Donuts header{
+    width: 100%;
+    position: relative;
+    
+}
+
+.Donuts p{
+    font-size: 130px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: Shakies;
+    width: 100%;
+    margin-top: -300px;
+
+}
+
+.cobertura-donuts{
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+
+.classicos{
+    margin-top: 300px;
+}
+
+.text p{
+    font-size: 100px;
+    font-family: Cloudy June;
+    border: 10px solid FFF;
+    background-color: #D8B8E9;
+    border-radius: 40px;
+    width: 600px;
+    margin-left: -60px;
+}
+
+
+.imagens_classicos{
+    display: flex;
+    height: 240px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 80px;
+
+}
+
+.imagens_classicos img{
+    border: 6px solid #FFF;
+    margin: 10px 10px;
+}
+
+.especiais{
+    margin: 400px;
+}
+
+
+.texte p{
+    font-size: 100px;
+    font-family: Cloudy June;
+    border: 10px solid FFF;
+    background-color: #D8B8E9;
+    border-radius: 40px;
+    width: 600px;
+    justify-content: center;
+    margin-left: 400px;
+    position: absolute;
+
+}
+
+.imagens_especiais{
+    display: flex;
+    height: 240px;
+    width: 100px;
+    margin-left: -340px;
+    margin-top: -160px;
+
+}
+
+.imagens_especiais img{
+    border: 6px solid #FFF;
+    margin: 10px 10px;
+    align-items: flex-end;
+}
+
+footer {
+    background-color:#E688AB;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #E688AB;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.social-icons .facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.social-icons .instagram {
+    background-color: #e4405f;
+    color: #fff;
+}
+
+
+.cadastro{
+    margin-top: 200px;
+
+}
+
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Cloudy June;
+    margin-bottom: -260px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #E688AB;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
